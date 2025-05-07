@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  color: #fff;
+  background: #111;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: #474a5c;
+  color: #ffffff;
+  font-family: "Lexend", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.header {
+  width: 100%;
+  background-color: #151515;
+  display: grid;
+  justify-items: center;
+  padding: 5px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  color: #ddd;
+}
+
+.header a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  width: 100%;
+}
+
+.main-page {
+  padding: 500px 0;
+}
+
+.hero {
+  display: grid;
+  align-items: center;
+  justify-items: left;
+  background-image: url("images/pantheon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: salmon;
+  height: 70vh;
+}
+
+.hero-text {
+  font-size: 48px;
+  font-family: "Lora", serif;
+  position: relative;
+  left: 10vw;
+  padding: 0 5px;
+}
+
+.hero-text p:nth-child(1) {
+  font-size: 56px;
+  font-family: "Lexend", serif;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.hero-text p:nth-child(2) {
+  line-height: 0.9;
+  padding-bottom: 10px;
+}
+
+.hero-text p:nth-child(3) {
+  font-size: 16px;
+  font-family: "Lexend", serif;
+  font-weight: 250;
+  color: #fff;
+}
+
+.hero-text a {
+  font-size: 14px;
+  font-family: "Lexend", sans-serif;
+
+  background-color: #222;
+  border-radius: 2px;
+  border: transparent;
+  padding: 10px;
+  color: #fff;
+  transition: 1s;
+  background-size: 200% auto;
+}
+
+.hero-text a:hover {
+  color: #222;
+  background-color: #f1f1f1;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  padding: 15px;
+  background-color: #151515;
+  font-size: 13px;
+  font-weight: 300;
+  color: #e9e9e9;
+}
+
+.bottom-copyright {
+  justify-content: left;
+}
+
+.bottom-nav {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 16px;
+  justify-content: right;
+  text-align: right;
+}
+
+.bottom-nav a {
+  color: #e9e9e9;
+}
+
+.bottom-nav a:hover {
+  color: #ffcf40;
+}
+
+.topnav {
+  color: #ffffff;
+  font-weight: 350;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px; 
+  border: 1px solid rgba(255, 255, 255, 0); 
+  width: 80vw;
+  position: sticky;
+  top: 0;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 16px;
+  margin: 5px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:not(:first-child) {
+  float: right;
+}
+
+#login {
+  border: transparent;
+  color: #000;
+  background-image: linear-gradient(
+    135deg,
+    #f09819 0%,
+    #edde5d 51%,
+    #f09819 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 12px;
+}
+
+#login:hover {
+  color: #fff;
+}
+
+.topnav a:hover {
+  color: #d9d9d9;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+.atuacoes {
+  display: grid;
+  justify-content: center;
+  /* width: 100%; */
+  color: #fff;
+  grid-template-columns: 1fr 1fr;
+  background-color: #eee;
+  color: #111;
+  padding: 30px 0;
+}
+
+.atuacao {
+  display: grid;
+  justify-items: center;
+  padding: 20px;
+  column-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.atuacao-text p:nth-child(1) {
+  padding-top: 10px;
+  font-size: 38px;
+  font-family: "Lora", serif;
+  font-weight: 450;
+  padding-bottom: 20px;
+  color: #444;
+}
+
+.atuacao-text p:nth-child(2) {
+  color: #555;
+  font-weight: 300;
+  font-size: 16px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.atuacao-text a {
+  background-color: #333;
+  color: #ddd;
+  padding: 6px 10px;
+  border: transparent;
+  border-radius: 2px;
+}
+
+.atuacao img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: transparent;
+  border-radius: 15px;
+}
+
+.about {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  align-items: start;
+  background-color: #f5f5f5;
+  color: #111;
+  gap: 50px;
+  padding: 10px 0;
+}
+
+.about-title {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #222;
+}
+
+.about-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+  padding: 20px 0px;
+  background-color: transparent;
+  color: #444;
+  max-width: 75vw;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+}
+
+.about-card img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border: transparent;
+  /* border-radius: 8px; */
+  box-shadow: -15px -15px #222;
+}
+
+.about-card p {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.polaroid-person {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background-color: transparent;
+  color: #444;
+  align-items: center;
+  justify-items: center;
+  gap: 5px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.polaroid-container {
+  text-align: center;
+  padding: 10px 20px;
+}
+.person p:nth-child(1) {
+  font-family: "Lora", serif;
+  font-size: 24px;
+}
+
+.polaroid-person img {
+  max-width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.polaroid-person p:nth-child(1) {
+  font-family: "Lora", serif;
+  font-size:  24px;
+  font-weight: 400;
+  padding-bottom: 10px
+}
+
+.polaroid-person p:nth-child(2) {
+  font-family: "Lexend", serif;
+  font-size:  18px;
+  font-weight: 250;
+  padding-bottom: 10px;
+}
+
+.polaroid-person img {
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 730px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .hero {
+    justify-items: center;
+  }
+
+  .hero-text {
+    font-size: 32px;
+    text-align: center;
+    position: static;
+  }
+
+  .hero-text a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  #login {
+    float: none;
+  }
+
+  .atuacao, .atuacoes {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .atuacao {
+    max-width: 500px;
+  }
+}

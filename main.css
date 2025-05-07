@@ -1,0 +1,38 @@
+.about-trinity-business {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #eee;
+    gap: 20px;
+}
+
+.horizontal-card {
+    background-color: #fff;
+    color: #111;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.horizontal-card-image {
+    background-color: #111;
+    height: 100%;
+    width: 100%;
+}
+
+.horizontal-card-text  {
+    padding: 5px 5px 5px 20px;
+}
+
+.horizontal-card-text p:nth-child(1) {
+    font-family: "Lora", serif;
+    font-size: 22px;
+    color: #222;
+    padding-bottom: 10px;
+}
+
+.horizontal-card-text p:nth-child(2) {
+    font-family: "Lexend", sans-serif;
+    font-size: 18px;
+    font-weight: 250;
+    color: #333;
+}
